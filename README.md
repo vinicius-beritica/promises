@@ -14,7 +14,7 @@ npm install
 
 Após a instalação dos pacotes, você deve preparar suas [variáveis de ambiente](https://pt.stackoverflow.com/questions/339476/o-que-s%C3%A3o-vari%C3%A1veis-de-ambiente). O objetivo destas variáveis é permitir que você configure segredos da sua aplicação, sem precisar publica-las em seu repositório. Outra vantagem do uso destas variáveis é permitir que diferentes configurações sejam adotadas para um projeto, sem que você precise rescrever seu código.
 
-Em nosso caso, teremos a variável `GITLAB_TOKEN`. Nesta variável, você precisa registrar o token que você produziu para acessar a API do gitlab.
+Em nosso caso, teremos as variáveis `GITLAB_TOKEN` e `URL_API`. Na variável `GITLAB_TOKEN`, você precisa registrar o token que você produziu para acessar a API do gitlab. A variável `URL_API`, tem registrado a url da API do GitLab.
 
 Para configurar sua chave, você deverá [gerar](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) esta chave na plataforma do https://git.raroacademy.com.br. Depois disso, duplique o arquivo `.env.example`, da raiz do seu repositório. Renomeie a réplica para `.env`. No novo arquivo, cole o token que você gerou.
 
